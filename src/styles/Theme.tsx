@@ -4,7 +4,8 @@ export const theme = {
         secondaryBg: '#F5F2FD',
         accent: '#5222D0',
 
-        font: '1F2626',
+        primaryFont: '#1F2626',
+        secondaryFont: '#DBFFFF',
         titleFont: '#151717'
     }
 }
