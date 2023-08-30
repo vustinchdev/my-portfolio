@@ -28,8 +28,7 @@ const StyledMenu = styled.nav`
         font-family: Montserrat;
         font-size: 16px;
         font-weight: 500;
-        line-height: 20px;
-        color: ${theme.colors.primaryFont};
+        color: ${theme.colors.primaryFont}
     }
 
     a:hover {

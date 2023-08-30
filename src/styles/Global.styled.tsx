@@ -9,8 +9,6 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-
-    background-color: ${theme.colors.primaryBg}
     }    
   
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -18,6 +16,11 @@ export const GlobalStyle = createGlobalStyle`
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    background-color: ${theme.colors.primaryBg};
+    color: ${theme.colors.primaryFont};
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 
