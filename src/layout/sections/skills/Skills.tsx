@@ -29,5 +29,5 @@ export const Skills = () => {
 }
 
 const StyledSkills = styled.section`
-    min-height: 100vh;
+    
 `

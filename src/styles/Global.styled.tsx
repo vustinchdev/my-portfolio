@@ -20,13 +20,16 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.primaryBg};
     color: ${theme.colors.primaryFont};
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
-
+section {
+    padding: 140px 0;
+}
 
     a {
         text-decoration: none;
+        color: ${theme.colors.primaryFont}
     }
 
     ul {
@@ -36,5 +39,7 @@ export const GlobalStyle = createGlobalStyle`
     button {
         background-color: unset;
         border: none;
+        cursor: pointer;
     }
 `
+
