@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { Icon } from "../../components/icon/Icon"
 import { FlexWrapper } from "../../components/FlexWrapper"
+import { theme } from "../../styles/Theme"
 
 //test commit
 export const Footer = () => {
@@ -31,12 +32,12 @@ export const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
-    background-color: #93f0b3;
-    min-height: 20vh;
+    padding: 40px 0;
 `
 const SocialList = styled.ul`
     display: flex;
-    gap: 30px;
+    gap: 40px;
+    margin: 30px 0;
 `
 
 const SocialItem = styled.li`
@@ -44,9 +45,17 @@ const SocialItem = styled.li`
 `
 
 const SocialLink = styled.a`
-    
+    width: 39px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        transform: translateY(-4px);
+    }
 `
 
 const Copyright = styled.small`
-    
+    letter-spacing: 0.04em;
+    color: ${theme.colors.primaryFont};
 `
