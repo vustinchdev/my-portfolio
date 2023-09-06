@@ -24,6 +24,10 @@ const StyledMenu = styled.nav`
         justify-content: space-around;
     }
 
+    @media ${theme.media.tablet} {
+        display: none;
+    }
+
     a {
         font-size: 16px;
         font-weight: 500;

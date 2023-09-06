@@ -45,8 +45,6 @@ const SocialItem = styled.li`
 `
 
 const SocialLink = styled.a`
-    width: 39px;
-    height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
