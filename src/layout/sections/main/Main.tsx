@@ -4,12 +4,13 @@ import { FlexWrapper } from "../../../components/FlexWrapper"
 import { Button } from "../../../components/Button"
 import { Container } from "../../../components/Container"
 import { theme } from "../../../styles/Theme"
+import { font } from "../../../styles/Common"
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-between"}>
+                <FlexWrapper align="center" justify="space-around" wrap="wrap-reverse">
                     <div>
                         <MainTitle>Frontend developer</MainTitle>
                         <Name>Vadim Ustinchik</Name>
@@ -30,16 +31,20 @@ const StyledMain = styled.div`
 const Photo = styled.img`
     width:530px;
     height: 400px;
+   
+
+    @media ${theme.media.mobile} {
+        width: 320px;
+        height: 240px;
+    }
 `
 const MainTitle = styled.h1`
-    font-family: Tinos;
-    font-size: 30px;
-    font-weight: 400;
+    ${font({ family: 'Tinos', Fmax: 30, Fmin: 26 })}
     color: ${theme.colors.titleFont};
 `
 const Name = styled.h2`
-    font-size: 68px;
-    font-weight: 600;
+    ${font({ weight: 600, Fmax: 60, Fmin: 36 })}
     color: ${theme.colors.accent};
     margin: 10px 0;
+    white-space: nowrap;
 `
