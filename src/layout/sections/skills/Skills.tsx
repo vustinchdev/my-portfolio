@@ -3,6 +3,8 @@ import { FlexWrapper } from "../../../components/FlexWrapper"
 import { SectionTitle } from "../../../components/SectionTitle"
 import { Skill } from "./skill/Skill"
 import { Container } from "../../../components/Container"
+import { theme } from "../../../styles/Theme"
+
 
 
 export const Skills = () => {
@@ -29,5 +31,9 @@ export const Skills = () => {
 }
 
 const StyledSkills = styled.section`
-    
-`
+    @media ${theme.media.tablet} {
+        ${FlexWrapper} {
+            column-gap: 45px;
+        }
+    }
+`   

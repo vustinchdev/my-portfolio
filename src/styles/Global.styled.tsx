@@ -20,11 +20,15 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.primaryBg};
     color: ${theme.colors.primaryFont};
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 section {
     padding: 140px 0;
+
+    @media ${theme.media.mobile} {
+        padding: 100px 0;
+    }
 }
 
     a {
