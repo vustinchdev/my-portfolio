@@ -34,11 +34,15 @@ const StyledWork = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: 380px;
+    height: 100%;
 `
 
 const Description = styled.div`
     padding: 30px 15px;
+
+    @media ${theme.media.mobile} {
+        padding: 15px 10px;
+}
 `
 
 const Title = styled.h3`
@@ -50,9 +54,15 @@ const Title = styled.h3`
 const Text = styled.p`
 letter-spacing: 0.04em;
 margin-top: 20px;
+
+@media ${theme.media.mobile} {
+    margin-top: 15px;
+}
 `
 
 const ImageWrapper = styled.div`
+    max-width: 520px;
+    max-height: 385px;
     position: relative;
 
     &:hover {
@@ -81,3 +91,4 @@ const ImageWrapper = styled.div`
         transform: translate(-50%, -50%);
     }
 `
+

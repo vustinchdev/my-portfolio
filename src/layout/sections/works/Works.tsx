@@ -31,5 +31,5 @@ export const Works = () => {
 }
 
 const StyledWorks = styled.section`
-   
+    
 `

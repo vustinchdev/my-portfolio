@@ -31,7 +31,6 @@ const StyledMain = styled.div`
 const Photo = styled.img`
     width:530px;
     height: 400px;
-   
 
     @media ${theme.media.mobile} {
         width: 320px;

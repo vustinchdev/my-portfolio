@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { Menu } from "../../components/menu/Menu"
 import { Container } from "../../components/Container"
-import { theme } from "../../styles/Theme"
 import { MobileMenu } from "./mobileMenu/MobileMenu"
 
 
