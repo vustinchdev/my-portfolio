@@ -1,41 +1,12 @@
-import styled, { css } from "styled-components"
-import { theme } from "../../../styles/Theme"
+import styled, { css } from "styled-components";
+import { theme } from "../../../styles/Theme";
 
+const Link = styled.a`
+    font-size: 16px;
+    font-weight: 500;
+    
 
-export const MobileMenu = (props: { menuItmems: Array<string> }) => {
-    return (
-        <StyledMobileMenu>
-            <BurgerButton isOpen={false}>
-                <span></span>
-            </BurgerButton>
-
-            <MobileMenuPopup isOpen={false}>
-                <ul>
-                    {props.menuItmems.map((item, index) => {
-                        return <li key={index}>
-                            <a href="">{item}</a>
-                        </li>
-                    })}
-                </ul>
-            </MobileMenuPopup>
-        </StyledMobileMenu>
-    )
-}
-
-
-const StyledMobileMenu = styled.nav`
-    display: none;
-
-    @media ${theme.media.tablet} {
-        display: block;
-    }
-
-    a {
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-    a:hover {
+    &:hover {
         width: 105px;
         height: 45px;
         padding: 12px 20px;
@@ -44,6 +15,16 @@ const StyledMobileMenu = styled.nav`
         background-color: ${theme.colors.accent};
         color: ${theme.colors.secondaryFont};
     }
+`
+const DesktopMenu = styled.nav`
+    ul {
+        display: flex;
+        gap: 30px;
+        justify-content: space-around;
+    }
+    `
+const MobileMenu = styled.nav`
+
 `
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
@@ -121,3 +102,11 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
         }
     }
 `
+
+export const S = {
+    Link,
+    DesktopMenu,
+    MobileMenu,
+    MobileMenuPopup,
+    BurgerButton
+}

@@ -1,39 +1,76 @@
-import styled from "styled-components"
+import React from "react"
 import { FlexWrapper } from "../../../components/FlexWrapper"
 import { SectionTitle } from "../../../components/SectionTitle"
 import { Skill } from "./skill/Skill"
 import { Container } from "../../../components/Container"
-import { theme } from "../../../styles/Theme"
+import { S } from "./Skills_Styles"
 
 
+const skillData = [
+    {
+        iconId: "js",
+        skillText: "JAVACRIPT"
+    },
+    {
+        iconId: "ts",
+        skillText: "TYPESCRIPT"
+    },
+    {
+        iconId: "mongoDB",
+        skillText: "MONGO DB"
+    },
+    {
+        iconId: "postgresql",
+        skillText: "POSTGRESQL"
+    },
+    {
+        iconId: "jest",
+        skillText: "JEST"
+    },
+    {
+        iconId: "express",
+        skillText: "EXPRESS"
+    },
+    {
+        iconId: "docker",
+        skillText: "DOCKER"
+    },
+    {
+        id: 7,
+        iconId: "reactJs",
+        skillText: "REACT JS"
+    },
+    {
+        iconId: "reactNactive",
+        skillText: "REACT NACTIVE"
+    },
+    {
+        iconId: "styledComponents",
+        skillText: "STYLED COMPONENTS"
+    },
+    {
+        iconId: "redux",
+        skillText: "REDUX"
+    },
+]
 
-export const Skills = () => {
+export const Skills: React.FC = () => {
     return (
-        <StyledSkills>
+        <S.Skills>
             <Container>
                 <SectionTitle>Skills</SectionTitle>
                 <FlexWrapper wrap="wrap" justify="center" columnGap="120px" rowGap="75px">
-                    <Skill iconId="js" skillText="JAVACRIPT" />
-                    <Skill iconId="ts" skillText="TYPESCRIPT" />
-                    <Skill iconId="mongoDB" skillText="MONGO DB" />
-                    <Skill iconId="postgresql" skillText="POSTGRESQL" />
-                    <Skill iconId="jest" skillText="JEST" />
-                    <Skill iconId="express" skillText="EXPRESS" />
-                    <Skill iconId="docker" skillText="DOCKER" />
-                    <Skill iconId="reactJs" skillText="REACT JS" />
-                    <Skill iconId="reactNactive" skillText="REACT NACTIVE" />
-                    <Skill iconId="styledComponents" skillText="STYLED COMPONENTS" />
-                    <Skill iconId="redux" skillText="REDUX" />
+
+                    {skillData.map((s, index) => {
+                        return <Skill key={index}
+                            iconId={s.iconId}
+                            skillText={s.skillText} />
+                    })}
+
                 </FlexWrapper>
             </Container>
-        </StyledSkills>
+        </S.Skills>
     )
 }
 
-const StyledSkills = styled.section`
-    @media ${theme.media.tablet} {
-        ${FlexWrapper} {
-            column-gap: 45px;
-        }
-    }
-`   
+

@@ -1,59 +1,46 @@
-import styled from "styled-components"
+import React from "react"
 import { Icon } from "../../components/icon/Icon"
 import { FlexWrapper } from "../../components/FlexWrapper"
-import { theme } from "../../styles/Theme"
+import { S } from "./Footer_ Styles"
 
-//test commit
-export const Footer = () => {
+
+
+const socialItemData = [
+    {
+        iconId: "mail"
+    },
+    {
+        iconId: "linkedin"
+    },
+    {
+        iconId: "github"
+    }
+]
+
+export const Footer: React.FC = () => {
     return (
-        <StyledFooter >
+        <S.Footer >
             <FlexWrapper direction="column" align="center">
-                <SocialList>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId="mail" width="39" height="38" viewBox="0 0 39 38" />
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId="linkedin" width="39" height="38" viewBox="0 0 39 38" />
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId="github" width="39" height="38" viewBox="0 0 39 38" />
-                        </SocialLink>
-                    </SocialItem>
-                </SocialList>
-                <Copyright>© 2023 Vadim Ustinchik, All Rights Reserved.</Copyright>
+                <S.SocialList>
+
+                    {socialItemData.map((s, index) => {
+                        return (
+                            <S.SocialItem>
+                                <S.SocialLink>
+                                    <Icon key={index}
+                                        iconId={s.iconId}
+                                        width="39"
+                                        height="38"
+                                        viewBox="0 0 39 38" />
+                                </S.SocialLink>
+                            </S.SocialItem>
+                        )
+                    })}
+
+                </S.SocialList>
+                <S.Copyright>© 2023 Vadim Ustinchik, All Rights Reserved.</S.Copyright>
             </FlexWrapper>
-        </StyledFooter>
+        </S.Footer>
     )
 }
 
-const StyledFooter = styled.footer`
-    padding: 40px 0;
-`
-const SocialList = styled.ul`
-    display: flex;
-    gap: 40px;
-    margin: 30px 0;
-`
-
-const SocialItem = styled.li`
-    
-`
-
-const SocialLink = styled.a`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-        transform: translateY(-4px);
-    }
-`
-
-const Copyright = styled.small`
-    letter-spacing: 0.04em;
-    color: ${theme.colors.primaryFont};
-`

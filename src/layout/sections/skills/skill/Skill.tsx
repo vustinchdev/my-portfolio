@@ -1,8 +1,8 @@
-import styled from "styled-components"
+import React from "react"
 import { Icon } from "../../../../components/icon/Icon"
 import { FlexWrapper } from "../../../../components/FlexWrapper"
-import { font } from "../../../../styles/Common"
-import { theme } from "../../../../styles/Theme"
+import { S } from "../Skills_Styles"
+
 
 
 type SkillPropsType = {
@@ -10,33 +10,14 @@ type SkillPropsType = {
     skillText: string
 }
 
-export const Skill = (props: SkillPropsType) => {
+export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
     return (
-        <StyledSkill>
+        <S.Skill>
             <FlexWrapper direction="column" align="center">
                 < Icon iconId={props.iconId} />
-                <StyledSkillText>{props.skillText}</StyledSkillText>
+                <S.SkillText>{props.skillText}</S.SkillText>
             </FlexWrapper>
-        </StyledSkill>
+        </S.Skill>
     )
 }
-
-const StyledSkill = styled.div`
-    width: 120px;
-    
-    @media ${theme.media.tablet} {
-        width: 80px;
-    }
-`
-const StyledSkillText = styled.span`
-    display:inline-block;
-    margin-top: 20px;
-    text-align: center;
-
-    ${font({ Fmax: 16, Fmin: 12 })}
-
-    @media ${theme.media.tablet} {
-        margin-top: 15px;
-    }
-`
 
