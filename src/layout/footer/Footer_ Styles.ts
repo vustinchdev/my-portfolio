@@ -2,11 +2,12 @@ import styled from "styled-components"
 import { theme } from "../../styles/Theme"
 
 const Footer = styled.footer`
+    position: relative;
     padding: 40px 0;
 `
 const SocialList = styled.ul`
     display: flex;
-    gap: 80px;
+    gap: 50px;
     margin: 30px 0;
 `
 
@@ -18,6 +19,7 @@ const SocialLink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: ${theme.animations.transition};
     &:hover {
         transform: translateY(-4px);
     }

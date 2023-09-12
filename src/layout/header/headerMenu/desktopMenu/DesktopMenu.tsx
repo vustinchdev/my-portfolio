@@ -3,10 +3,10 @@ import { Menu } from "../../headerMenu/menu/Menu"
 import { S } from "../HeaderMenu_Styles"
 
 
-export const DesktopMenu: React.FC<{ menuItmems: Array<string> }> = (props: { menuItmems: Array<string> }) => {
+export const DesktopMenu: React.FC = () => {
     return (
         <S.DesktopMenu>
-            <Menu menuItmems={props.menuItmems} />
+            <Menu />
         </S.DesktopMenu>
     )
 }

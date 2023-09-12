@@ -33,7 +33,8 @@ section {
 
     a {
         text-decoration: none;
-        color: ${theme.colors.primaryFont}
+        color: ${theme.colors.primaryFont};
+        cursor: pointer;
     }
 
     ul {

@@ -4,6 +4,7 @@ import { FlexWrapper } from "../../../components/FlexWrapper"
 import { font } from "../../../styles/Common"
 
 const Skills = styled.section`
+    position: relative;
     @media ${theme.media.tablet} {
         ${FlexWrapper} {
             column-gap: 45px;

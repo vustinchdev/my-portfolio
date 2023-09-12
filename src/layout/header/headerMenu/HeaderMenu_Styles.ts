@@ -1,12 +1,13 @@
 import styled, { css } from "styled-components";
 import { theme } from "../../../styles/Theme";
+import { Link } from "react-scroll";
 
-const Link = styled.a`
+const NavLink = styled(Link)`
     font-size: 16px;
     font-weight: 500;
-    
+    transition: ${theme.animations.transition};
 
-    &:hover {
+    &:hover, &.active {
         width: 105px;
         height: 45px;
         padding: 12px 20px;
@@ -35,21 +36,28 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     bottom: 0;
     z-index:999;
     background-color: ${theme.colors.primaryBg};
-    display: none;
-
-    ${props => props.isOpen && css<{ isOpen: boolean }>`
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    `}
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 0.8s ease-in-out;
 
     ul {
         display: flex;
-        gap: 30px;
+        gap: 10px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        transition: 0.8s ease-in-out;
     }
+
+    ${props => props.isOpen && css<{ isOpen: boolean }>`
+        transform: translateY(0);
+        & ul {
+            gap: 40px;
+        }
+    `}
 `
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
@@ -104,7 +112,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 `
 
 export const S = {
-    Link,
+    NavLink,
     DesktopMenu,
     MobileMenu,
     MobileMenuPopup,

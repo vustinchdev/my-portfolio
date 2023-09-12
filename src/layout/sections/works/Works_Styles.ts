@@ -4,7 +4,7 @@ import { Button } from "../../../components/Button"
 
 
 const Works = styled.section`
-    
+    position: relative;
 `
 const Work = styled.div`
     max-width: 520px;
@@ -44,17 +44,23 @@ margin-top: 20px;
 `
 
 const ImageWrapper = styled.div`
-    max-width: 520px;
-    max-height: 385px;
     position: relative;
 
-    &:hover {
+    ${Button} {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -40%);
+        transition: ${theme.animations.transition}
+    }
 
-        ${Button} {
-            opacity: 1;
-        }
+    &::before {
+        width: 100%;
+        height: 100%;
+    }
 
-        &::before {
+    &::before {
         content: "";
         position: absolute;
         left: 0;
@@ -62,16 +68,20 @@ const ImageWrapper = styled.div`
         top: 0;
         bottom: 0;
         background: rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(4px);
-    }
+        backdrop-filter: blur(2px);
+        opacity: 0;
+        transition: ${theme.animations.transition}
     }
 
-    ${Button} {
-        opacity: 0;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+
+        ${Button} {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
     }
 `
 
