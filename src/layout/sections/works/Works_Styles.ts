@@ -11,7 +11,7 @@ const Work = styled.div`
     width: 100%;
     background-color: ${theme.colors.secondaryBg};
     border-radius: 6px;
-    box-shadow: 2px 2px 32px 0 #28262C;
+    box-shadow: 2px 2px 32px #28262C;
     overflow: hidden;
 `
 

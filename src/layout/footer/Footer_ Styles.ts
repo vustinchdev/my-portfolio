@@ -19,7 +19,10 @@ const SocialLink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: ${theme.colors.primaryBg};
     transition: ${theme.animations.transition};
+    color: ${theme.colors.accent};
+
     &:hover {
         transform: translateY(-4px);
     }

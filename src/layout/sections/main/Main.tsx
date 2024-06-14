@@ -1,7 +1,6 @@
 import React from 'react'
-import photo from '../../../assets/images/support-1.webp'
+import photo from '../../../assets/images/photo.webp'
 import { FlexWrapper } from "../../../components/FlexWrapper"
-import { Button } from "../../../components/Button"
 import { Container } from "../../../components/Container"
 import { S } from './Main_Styles'
 import Typewriter from 'typewriter-effect';

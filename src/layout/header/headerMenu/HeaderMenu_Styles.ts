@@ -78,7 +78,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
         bottom: 50px;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
-        background-color: #ffffff;
+        background-color: transparent;
     `}
 
     &::before {

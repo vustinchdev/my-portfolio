@@ -1,10 +1,10 @@
 export const theme = {
     colors: {
-        primaryBg: '#FAFAFA',
-        secondaryBg: '#F5F2FD',
-        accent: '#5222D0',
+        primaryBg: '#A6CDAB',
+        secondaryBg: '#ffffff',
+        accent: '#305C3F',
 
-        borderColor: '#534084',
+        borderColor: '#085E17',
         placeHolderColor: '#919B9B',
 
         primaryFont: '#1F2626',

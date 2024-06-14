@@ -9,13 +9,10 @@ const Main = styled.div`
 `
 
 const Photo = styled.img`
-    width:530px;
-    height: 400px;
-
-    @media ${theme.media.mobile} {
-        width: 320px;
-        height: 240px;
-    }
+    max-width: 350px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 2px 2px 32px #28262C;;
 `
 const MainTitle = styled.h1`
     ${font({ family: 'Tinos', Fmax: 30, Fmin: 26 })};

@@ -12,6 +12,7 @@ export const Contacts: React.FC = () => {
                 <SectionTitle>Contact</SectionTitle>
                 <S.Form>
                     <S.Field placeholder="name" />
+                    <S.Field placeholder='your contact details'/>
                     <S.Field placeholder="subject" />
                     <S.Field placeholder='message' as="textarea" />
                     <Button type='submit'>Submit</Button>

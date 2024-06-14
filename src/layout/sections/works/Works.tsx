@@ -40,8 +40,10 @@ export const Works: React.FC = () => {
                     <Fade
                         direction='left'
                         delay={0.2}>
-                        {worksData.map((w) => {
-                            return <Work title={w.title}
+                        {worksData.map((w, index) => {
+                            return <Work
+                                key={index}
+                                title={w.title}
                                 text={w.text}
                                 src={w.src} />
                         })}
