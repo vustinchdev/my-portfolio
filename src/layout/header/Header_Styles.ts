@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { theme } from "../../styles/Theme";
+;
 
 const Header = styled.header`
     padding: 20px 0;
@@ -7,6 +9,7 @@ const Header = styled.header`
     left: 0;
     right: 0;
     z-index: 99999;
+    background-color: ${theme.colors.headerBg};
 `
 
 export const S = {
