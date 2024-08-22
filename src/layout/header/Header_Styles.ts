@@ -10,6 +10,10 @@ const Header = styled.header`
     right: 0;
     z-index: 99999;
     background-color: ${theme.colors.headerBg};
+
+    @media ${theme.media.tablet} {
+        background-color: transparent;
+    }
 `
 
 export const S = {
