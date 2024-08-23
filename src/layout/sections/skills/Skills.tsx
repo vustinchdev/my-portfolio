@@ -10,48 +10,79 @@ import { Fade } from "react-awesome-reveal";
 const skillData = [
     {
         iconId: "js",
-        skillText: "JAVACRIPT"
+        skillText: "JavaScript"
     },
     {
         iconId: "ts",
-        skillText: "TYPESCRIPT"
+        skillText: "TypeScript"
     },
     {
-        iconId: "mongoDB",
-        skillText: "MONGO DB"
+        iconId: "reactJs",
+        skillText: "React"
     },
     {
-        iconId: "postgresql",
-        skillText: "POSTGRESQL"
+        iconId: "redux",
+        skillText: "Redux"
+    },
+    {
+        iconId: "redux",
+        skillText: "ReduxToolkit"
+    },
+    {
+        iconId: "redux",
+        skillText: "RTKQuery"
+    },
+    {
+        iconId: "axios",
+        skillText: "Axios"
+    },
+    {
+        iconId: "reactRouter",
+        skillText: "ReactRouter"
+    },
+    {
+        iconId: "reactHookForm",
+        skillText: "ReactHookForm"
+    },
+    {
+        iconId: "storybook",
+        skillText: "Storybook"
+    },
+    {
+        iconId: "git",
+        skillText: "Git"
+    },
+    {
+        iconId: "html",
+        skillText: "HTML"
+    },
+    {
+        iconId: "css",
+        skillText: "CSS"
+    },
+    {
+        iconId: "radixUI",
+        skillText: "RadixUI"
+    },
+    {
+        iconId: "materialUI",
+        skillText: "MaterialUI"
+    },
+    {
+        iconId: "antd",
+        skillText: "AntDesign"
     },
     {
         iconId: "jest",
         skillText: "JEST"
     },
     {
-        iconId: "express",
-        skillText: "EXPRESS"
-    },
-    {
-        iconId: "docker",
-        skillText: "DOCKER"
-    },
-    {
-        id: 7,
-        iconId: "reactJs",
-        skillText: "REACT JS"
-    },
-    {
-        iconId: "reactNactive",
-        skillText: "REACT NACTIVE"
+        iconId: "sass",
+        skillText: "SASS"
     },
     {
         iconId: "styledComponents",
         skillText: "STYLED COMPONENTS"
-    },
-    {
-        iconId: "redux",
-        skillText: "REDUX"
     },
 ]
 
