@@ -27,6 +27,10 @@ body {
 section {
     padding: 140px 0;
 
+    &:nth-of-type(odd) {
+        background-color: ${theme.colors.secondaryBg};
+    }
+
     @media ${theme.media.mobile} {
         padding: 100px 0;
     }

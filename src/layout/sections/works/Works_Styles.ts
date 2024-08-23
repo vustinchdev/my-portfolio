@@ -9,7 +9,7 @@ const Works = styled.section`
 const Work = styled.div`
     max-width: 520px;
     width: 100%;
-    background-color: ${theme.colors.secondaryBg};
+    background-color: ${theme.colors.workBg};
     border-radius: 6px;
     box-shadow: 2px 2px 32px #28262C;
     overflow: hidden;
