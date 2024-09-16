@@ -1,25 +1,25 @@
 export const theme = {
-    colors: {
-        primaryBg: '#A6CDAB',
-        secondaryBg: '#c3e0c7',
-        workBg:'#ffffff',
-        headerBg: '#CEE6D1',
-        accent: '#305C3F',
+  colors: {
+    primaryBg: '#A6CDAB',
+    secondaryBg: '#c3e0c7',
+    workBg: '#ffffff',
+    headerBg: '#CEE6D1',
+    accent: '#305C3F',
 
-        borderColor: '#085E17',
-        placeHolderColor: '#919B9B',
+    borderColor: '#085E17',
+    placeHolderColor: '#919B9B',
 
-        primaryFont: '#1F2626',
-        secondaryFont: '#DBFFFF',
-        titleFont: '#151717'
-    },
+    primaryFont: '#1F2626',
+    secondaryFont: '#DBFFFF',
+    titleFont: '#151717',
+  },
 
-    media: {
-        tablet: 'screen and (max-width: 768px)',
-        mobile: 'screen and (max-width: 576px)'
-    },
+  media: {
+    tablet: 'screen and (max-width: 768px)',
+    mobile: 'screen and (max-width: 576px)',
+  },
 
-    animations: {
-        transition: '0.2s ease-in-out'
-    }
+  animations: {
+    transition: '0.2s ease-in-out',
+  },
 }
