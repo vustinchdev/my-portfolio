@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { theme } from '../../styles/Theme'
+import { theme } from 'styles/Theme'
 
 const Footer = styled.footer`
   position: relative;

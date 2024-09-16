@@ -1,8 +1,8 @@
 import React from 'react'
-import { FlexWrapper } from '../../../components/FlexWrapper'
-import { SectionTitle } from '../../../components/SectionTitle'
+import { FlexWrapper } from 'components/FlexWrapper'
+import { SectionTitle } from 'components/SectionTitle'
 import { Skill } from './skill/Skill'
-import { Container } from '../../../components/Container'
+import { Container } from 'components/Container'
 import { S } from './Skills_Styles'
 import { Fade } from 'react-awesome-reveal'
 

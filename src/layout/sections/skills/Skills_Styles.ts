@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { theme } from '../../../styles/Theme'
-import { FlexWrapper } from '../../../components/FlexWrapper'
-import { font } from '../../../styles/Common'
+import { theme } from 'styles/Theme'
+import { FlexWrapper } from 'components/FlexWrapper'
+import { font } from 'styles/Common'
 
 const Skills = styled.section`
   position: relative;

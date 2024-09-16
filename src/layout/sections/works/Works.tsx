@@ -1,9 +1,9 @@
 import React from 'react'
-import { SectionTitle } from '../../../components/SectionTitle'
-import { FlexWrapper } from '../../../components/FlexWrapper'
-import image from './../../../assets/images/image.webp'
+import { SectionTitle } from 'components/SectionTitle'
+import { FlexWrapper } from 'components/FlexWrapper'
+import image from 'assets/images/image.webp'
 import { Work } from './work/Work'
-import { Container } from '../../../components/Container'
+import { Container } from 'components/Container'
 import { S } from './Works_Styles'
 import { Fade } from 'react-awesome-reveal'
 

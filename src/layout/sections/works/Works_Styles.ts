@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { theme } from '../../../styles/Theme'
-import { Button } from '../../../components/Button'
+import { theme } from 'styles/Theme'
+import { Button } from 'components/Button'
 
 const Works = styled.section`
   position: relative;
