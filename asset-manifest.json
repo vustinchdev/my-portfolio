@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/my-portfolio/static/js/main.599519f3.js",
+    "main.css": "/my-portfolio/static/css/main.5c535a38.css",
+    "main.js": "/my-portfolio/static/js/main.b8f14c51.js",
     "static/js/787.25eaef86.chunk.js": "/my-portfolio/static/js/787.25eaef86.chunk.js",
-    "static/media/photo.webp": "/my-portfolio/static/media/photo.f7e52eacf1177126b443.webp",
-    "static/media/icons-sprite.svg": "/my-portfolio/static/media/icons-sprite.40974298fc6c0c5a0e126cd8a4ca0902.svg",
-    "static/media/image.webp": "/my-portfolio/static/media/image.045d2ee3938119f9acc2.webp",
+    "static/media/photo.webp": "/my-portfolio/static/media/photo.7a1fa2f9d7f5c8917950.webp",
+    "static/media/icons-sprite.svg": "/my-portfolio/static/media/icons-sprite.2ef46596d98fa13c39282e2c93baa054.svg",
+    "static/media/flash-cards-spa.webp": "/my-portfolio/static/media/flash-cards-spa.a594c27222d6ce8de077.webp",
     "index.html": "/my-portfolio/index.html",
-    "main.599519f3.js.map": "/my-portfolio/static/js/main.599519f3.js.map",
+    "main.5c535a38.css.map": "/my-portfolio/static/css/main.5c535a38.css.map",
+    "main.b8f14c51.js.map": "/my-portfolio/static/js/main.b8f14c51.js.map",
     "787.25eaef86.chunk.js.map": "/my-portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.599519f3.js"
+    "static/css/main.5c535a38.css",
+    "static/js/main.b8f14c51.js"
   ]
 }
