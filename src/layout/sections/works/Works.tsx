@@ -1,7 +1,7 @@
 import React from 'react'
 import { SectionTitle } from 'components/SectionTitle'
 import { FlexWrapper } from 'components/FlexWrapper'
-import image from 'assets/images/image.webp'
+import flashCardsSpa from 'assets/images/flash-cards-spa.webp'
 import { Work } from './work/Work'
 import { Container } from 'components/Container'
 import { S } from './Works_Styles'
@@ -9,24 +9,9 @@ import { Fade } from 'react-awesome-reveal'
 
 const worksData = [
   {
-    title: 'TITLE PROJECT',
-    text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    src: image,
-  },
-  {
-    title: 'I N S I G H T G R A M',
-    text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    src: image,
-  },
-  {
-    title: 'TITLE PROJECT',
-    text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    src: image,
-  },
-  {
-    title: 'I N S I G H T G R A M',
-    text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    src: image,
+    title: 'Flash-Cards-SPA',
+    text: 'This app is designed for learning with question and answer cards. Users can create their own decks of cards or use ready-made decks of cards. The app allows you to add pictures to help you remember the information better.',
+    src: flashCardsSpa,
   },
 ]
 
