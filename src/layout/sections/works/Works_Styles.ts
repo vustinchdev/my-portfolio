@@ -41,16 +41,21 @@ const Text = styled.p`
     margin-top: 15px;
   }
 `
+const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 35px;
+`
 
 const ImageWrapper = styled.div`
   position: relative;
 
-  ${Button} {
+  ${ButtonWrapper} {
     opacity: 0;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
     transition: ${theme.animations.transition};
   }
 
@@ -77,9 +82,9 @@ const ImageWrapper = styled.div`
       opacity: 1;
     }
 
-    ${Button} {
+    ${ButtonWrapper} {
       opacity: 1;
-      transform: translate(-50%, -50%);
+      /* transform: translate(-50%, -50%); */
     }
   }
 `
@@ -92,4 +97,5 @@ export const S = {
   Title,
   Text,
   ImageWrapper,
+  ButtonWrapper
 }
