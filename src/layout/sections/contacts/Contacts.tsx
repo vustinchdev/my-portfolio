@@ -21,7 +21,7 @@ export const Contacts: React.FC = () => {
       const data = Object.fromEntries(formData)
 
       try {
-        await axios.post('http://localhost:5000/sendMessage', data)
+        await axios.post('https://portfolio-server-gilt-one.vercel.app/sendMessage', data)
         toast.success('Message sent successfully.')
         formRef.current.reset()
       } catch (error) {
