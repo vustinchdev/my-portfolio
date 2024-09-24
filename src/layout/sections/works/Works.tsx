@@ -13,7 +13,7 @@ const worksData = [
     text: 'This app is designed for learning with question and answer cards. Users can create their own decks of cards or use ready-made decks of cards. The app allows you to add pictures to help you remember the information better.',
     src: flashCardsSpa,
     demoLink: 'https://flash-cards-spa.vercel.app',
-    codeLink: 'https://github.com/ana-koles/Flash-Cards-SPA'
+    codeLink: 'https://github.com/ana-koles/Flash-Cards-SPA',
   },
 ]
 
@@ -25,7 +25,7 @@ export const Works: React.FC = () => {
         <FlexWrapper justify="space-around" wrap="wrap" rowGap="40px" columnGap="25px">
           <Fade direction="left" delay={0.2}>
             {worksData.map((w, index) => {
-              return <Work key={index} {...w}/>
+              return <Work key={index} {...w} />
             })}
           </Fade>
         </FlexWrapper>

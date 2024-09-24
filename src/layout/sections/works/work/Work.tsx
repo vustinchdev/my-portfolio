@@ -15,9 +15,13 @@ export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
     <S.Work>
       <S.ImageWrapper>
         <S.Image src={props.src} alt="" />
-        <S.ButtonWrapper> 
-          <Button as={'a'} href={props.demoLink} target='_blank'>Demo</Button>
-          <Button as={'a'} href={props.codeLink} target='_blank'>Code</Button>
+        <S.ButtonWrapper>
+          <Button as={'a'} href={props.demoLink} target="_blank">
+            Demo
+          </Button>
+          <Button as={'a'} href={props.codeLink} target="_blank">
+            Code
+          </Button>
         </S.ButtonWrapper>
       </S.ImageWrapper>
       <S.Description>

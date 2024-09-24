@@ -97,5 +97,5 @@ export const S = {
   Title,
   Text,
   ImageWrapper,
-  ButtonWrapper
+  ButtonWrapper,
 }

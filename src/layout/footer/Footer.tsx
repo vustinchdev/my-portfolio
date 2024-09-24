@@ -6,15 +6,15 @@ import { S } from './Footer_ Styles'
 const socialItemData = [
   {
     iconId: 'mail',
-    url: 'mailto:vustinchdev@gmail.com'
+    url: 'mailto:vustinchdev@gmail.com',
   },
   {
     iconId: 'linkedin',
-    url: 'https://www.linkedin.com/in/vadim-ustinchik/'
+    url: 'https://www.linkedin.com/in/vadim-ustinchik/',
   },
   {
     iconId: 'github',
-    url: 'https://github.com/vustinchdev'
+    url: 'https://github.com/vustinchdev',
   },
 ]
 
@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
           {socialItemData.map((s, index) => {
             return (
               <S.SocialItem key={index}>
-                <S.SocialLink href={s.url} target='_blank'>
+                <S.SocialLink href={s.url} target="_blank">
                   <Icon iconId={s.iconId} width="39" height="38" viewBox="0 0 39 38" />
                 </S.SocialLink>
               </S.SocialItem>

@@ -7,6 +7,7 @@ import axios from 'axios'
 import { Container } from 'components/Container'
 import { SectionTitle } from 'components/SectionTitle'
 import { Button } from 'components/Button'
+import { toast } from 'react-toastify'
 
 
 
@@ -21,8 +22,11 @@ export const Contacts: React.FC = () => {
 
       try {
         await axios.post('http://localhost:5000/sendMessage', data)
+        toast.success('Message sent successfully.')
         formRef.current.reset()
-      } catch (error) {}
+      } catch (error) {
+        toast.error('Error sending message, please try again.')
+      }
     }
   }
 
