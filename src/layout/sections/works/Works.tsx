@@ -2,6 +2,7 @@ import React from 'react'
 import { SectionTitle } from 'components/SectionTitle'
 import { FlexWrapper } from 'components/FlexWrapper'
 import flashCardsSpa from 'assets/images/flash-cards-spa.webp'
+import myTasks from 'assets/images/my-tasks.webp'
 import { Work } from './work/Work'
 import { Container } from 'components/Container'
 import { S } from './Works_Styles'
@@ -15,6 +16,13 @@ const worksData = [
     demoLink: 'https://flash-cards-spa.vercel.app',
     codeLink: 'https://github.com/ana-koles/Flash-Cards-SPA',
   },
+  {
+    title: 'My-tasks',
+    text: 'The application provides an interface for creating, editing and deleting tasks.',
+    src: myTasks,
+    demoLink: 'https://vustinchdev.github.io/My-tasks',
+    codeLink: 'https://github.com/vustinchdev/My-tasks'
+  }
 ]
 
 export const Works: React.FC = () => {
