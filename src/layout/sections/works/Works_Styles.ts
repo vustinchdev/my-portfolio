@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import { theme } from 'styles/Theme'
-import { Button } from 'components/Button'
+
 
 const Works = styled.section`
   position: relative;
 `
 const Work = styled.div`
+  height: 100%;
   max-width: 520px;
   width: 100%;
   background-color: ${theme.colors.workBg};
@@ -36,6 +37,7 @@ const Title = styled.h3`
 const Text = styled.p`
   letter-spacing: 0.04em;
   margin-top: 20px;
+  word-wrap: break-word;
 
   @media ${theme.media.mobile} {
     margin-top: 15px;
@@ -84,7 +86,6 @@ const ImageWrapper = styled.div`
 
     ${ButtonWrapper} {
       opacity: 1;
-      /* transform: translate(-50%, -50%); */
     }
   }
 `
