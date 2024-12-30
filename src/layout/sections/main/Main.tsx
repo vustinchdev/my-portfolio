@@ -25,7 +25,11 @@ export const Main: React.FC = () => {
               />
             </S.MainTitle>
             <S.Name>Vadim Ustinchik</S.Name>
-            <Button as={'a'} href='#' target='_blank' rel="noopener noreferrer" download>
+            <Button 
+            as={'a'} href='https://drive.google.com/file/d/1YwIfg0aJ1qXj9NyrC4dUxq8O2akVIwBN/view?usp=sharing' 
+            target='_blank' 
+            rel="noopener noreferrer" 
+            download>
               <Icon iconId='fileDownload' width="24" height="24" viewBox="0 0 24 24"/>
               Download CV
             </Button>
