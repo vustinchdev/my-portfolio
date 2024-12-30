@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.5c535a38.css",
-    "main.js": "/my-portfolio/static/js/main.db123b5d.js",
+    "main.js": "/my-portfolio/static/js/main.7af55a36.js",
     "static/js/787.25eaef86.chunk.js": "/my-portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/photo.webp": "/my-portfolio/static/media/photo.7a1fa2f9d7f5c8917950.webp",
-    "static/media/my-tasks.webp": "/my-portfolio/static/media/my-tasks.d279f72621e34d58744c.webp",
-    "static/media/icons-sprite.svg": "/my-portfolio/static/media/icons-sprite.2ef46596d98fa13c39282e2c93baa054.svg",
-    "static/media/flash-cards-spa.webp": "/my-portfolio/static/media/flash-cards-spa.a594c27222d6ce8de077.webp",
+    "static/media/myTasks.webp": "/my-portfolio/static/media/myTasks.d279f72621e34d58744c.webp",
+    "static/media/icons-sprite.svg": "/my-portfolio/static/media/icons-sprite.ca6f41111442d760be11d833491a023e.svg",
+    "static/media/flashCardsSpa.webp": "/my-portfolio/static/media/flashCardsSpa.a594c27222d6ce8de077.webp",
+    "static/media/communicationApp.webp": "/my-portfolio/static/media/communicationApp.b80038adbbef0f1baac4.webp",
     "index.html": "/my-portfolio/index.html",
     "main.5c535a38.css.map": "/my-portfolio/static/css/main.5c535a38.css.map",
-    "main.db123b5d.js.map": "/my-portfolio/static/js/main.db123b5d.js.map",
+    "main.7af55a36.js.map": "/my-portfolio/static/js/main.7af55a36.js.map",
     "787.25eaef86.chunk.js.map": "/my-portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c535a38.css",
-    "static/js/main.db123b5d.js"
+    "static/js/main.7af55a36.js"
   ]
 }
