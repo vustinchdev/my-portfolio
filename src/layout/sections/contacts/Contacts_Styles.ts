@@ -24,7 +24,7 @@ const Field = styled.input`
   border-radius: 6px;
   border: 1px solid ${theme.colors.borderColor};
   padding: 10px 15px;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 16px;
 
