@@ -1,14 +1,22 @@
 import React from 'react'
 import { SectionTitle } from 'components/SectionTitle'
 import { FlexWrapper } from 'components/FlexWrapper'
-import flashCardsSpa from 'assets/images/flash-cards-spa.webp'
-import myTasks from 'assets/images/my-tasks.webp'
+import flashCardsSpa from 'assets/images/flashCardsSpa.webp'
+import communicationApp from 'assets/images/communicationApp.webp'
+import myTasks from 'assets/images/myTasks.webp'
 import { Work } from './work/Work'
 import { Container } from 'components/Container'
 import { S } from './Works_Styles'
 import { Fade } from 'react-awesome-reveal'
 
 const worksData = [
+  {
+    title: 'Communication app',
+    text: 'This application for communicating, publishing posts and viewing interesting content.',
+    src: communicationApp,
+    demoLink: 'https://samuraichiki.org/',
+    codeLink: 'https://github.com/samuraichikit/inctagram',
+  },
   {
     title: 'Flash-Cards-SPA',
     text: 'This app is designed for learning with question and answer cards. Users can create their own decks of cards or use ready-made decks of cards. The app allows you to add pictures to help you remember the information better.',
