@@ -26,7 +26,7 @@ export const Main: React.FC = () => {
             </S.MainTitle>
             <S.Name>Vadim Ustinchik</S.Name>
             <Button 
-            as={'a'} href='https://drive.google.com/file/d/1IKSaYlttKpackUlgaY7OKQuKKIYUoHcA/view?usp=drive_link' 
+            as={'a'} href='https://drive.google.com/file/d/12-h4TtJJOukcBxMIoESa0sDAqQwAE08s/view?usp=drive_link' 
             target='_blank' 
             rel="noopener noreferrer" 
             download>
